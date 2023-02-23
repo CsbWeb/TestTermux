@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #343434;
+  color: white;
+}
+.body {
+  overflow: hidden;
+}
+
+h1,
+h3,
+h5 p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 33px 100px;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 15px 15px 0 15px;
+  outline: none;
+  border: 2px solid white;
+  color: white;
+  box-shadow: 0 0px 20px -5px black;
+  background-color: teal;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.inputText {
+  border: 2px solid teal;
+  text-align: center;
+  border-radius: 7px;
+  margin: 5px 5px;
+  box-shadow: 0 0px 20px -5px black;
+  outline: none;
+  padding: 3px;
+}
+
+.inputBtn {
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: 2px solid white;
+  font-size: 16.5px;
+  font-weight: bolder;
+  color: white;
+  box-shadow: 0 0px 10px -1px black;
+  background-color: teal;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.flexCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-enter {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.item-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.item-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.item-exit-active {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 500ms, transform 1000ms;
+}
